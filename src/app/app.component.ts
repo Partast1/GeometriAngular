@@ -1,21 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Rectangle} from './rectangle';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-
 export class AppComponent {
-  title = 'Geometri';
+  @Input() height: number;
+  total = this.height;
 }
+// export class ClickMeComponent {
+//   clickMessage = '';
 
-class AreaSqure {
-  length: number;
-  constructor(length: number) {
-    this.length = a * a;
+class ClickMeComponent{
+   CalculateArea;
   }
-  aSqure(): number {
-    return this.length;
-  }
-}
+
