@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Geometri"
+    }
+  },
+  "defaultProject": "Geometri",
+  "cli": {
+    "analytics": false
+  }
 }
