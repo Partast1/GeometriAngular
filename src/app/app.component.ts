@@ -7,13 +7,20 @@ import { Rectangle} from './rectangle';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  @Input() height: number;
-  total = this.height;
+  @Input() length: number;
+  @Input() width: number;
+  @Input() rectSum: number;
+  @Input() degrees: number;
+  @Input() squareSum: number;
+
+  CalcRectangle(width: number, length: number){
+    this.rectSum = length * width;
+
+  }
+  CalcSquare(degress: number){
+    this.squareSum = degress * degress;
+  }
 }
 // export class ClickMeComponent {
 //   clickMessage = '';
-
-class ClickMeComponent{
-   CalculateArea;
-  }
 
